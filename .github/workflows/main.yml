@@ -78,7 +78,6 @@ jobs:
 
     - name: Deploy to EKS
       run: |
-          kubectl apply -f src/eks/app-upload-process-configmap.yaml
           kubectl apply -f src/eks/app-upload-process-deployment.yaml
           kubectl apply -f src/eks/app-upload-process-service-aws.yaml
           kubectl apply -f src/eks/app-upload-process-hpa.yaml
